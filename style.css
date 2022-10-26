@@ -39,7 +39,7 @@ body {
   line-height: 1em;
   color: hsl(212, 21%, 14%);
 }
-.description span {
+.category {
   font-size: 12px;
   letter-spacing: 5px;
   margin-top:15px;
@@ -60,14 +60,13 @@ body {
   margin-top: 28px;
   margin-bottom: 28px;
 }
-.price p:first-child {
+.price > span {
   color: hsl(158, 36%, 37%);
   font-family: 'Fraunces', serif;
   font-size: 31px;
   margin-right: 20px;
 }
-.price p:last-child {
-  text-decoration: line-through;
+.price del {
   color: hsl(228, 12%, 48%);
   font-size: 13px;
 }
@@ -99,6 +98,15 @@ button:hover {
   background-color: hsl(212, 21%, 14%);
 }
 
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
 @media screen and (max-width: 678px) {
   * {
     margin: 0;
@@ -117,7 +125,7 @@ button:hover {
   .description {
     padding-left: 25px;
   }
-  .description span {
+  .category {
     margin-top: 10px;
     margin-bottom: 15px;
   }
