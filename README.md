@@ -11,6 +11,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -42,13 +43,24 @@ Users should be able to:
 - Flexbox
 
 ### What I learned
-I learned the way to apply media query.
-
+ - How to apply media queries
 ```css
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 678px) {
   (...)
 }
 ```
+
+ - How to apply different images according to resolution
+```html
+<picture>
+  <source media="(max-width: 678px)" srcset="./images/image-product-mobile.jpg">
+  <img src="./images/image-product-desktop.jpg" alt="Perfume Image">
+</picture>
+```
+
+### Useful resources
+
+- [MDN Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) - This helped me for applying images by resolution.
 
 ## Author
 
